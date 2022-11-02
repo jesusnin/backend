@@ -25,7 +25,7 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return 'post';
     }
 
     /**
@@ -36,7 +36,7 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-        //
+        return $book;
     }
 
     /**
@@ -48,7 +48,7 @@ class BookController extends Controller
      */
     public function update(Request $request, Book $book)
     {
-        //
+        return 'patch';
     }
 
     /**
@@ -59,6 +59,6 @@ class BookController extends Controller
      */
     public function destroy(Book $book)
     {
-        //
+        return 'delete';
     }
 }
